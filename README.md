@@ -10,3 +10,52 @@ Dependencies :
 - yarn
 - meteor
 - typescript
+
+## How to install :
+
+### Install the dependencies :
+
+#### Windows :
+<ol>
+  <li>First of all, install **[NodeJS so you could use NPM](https://nodejs.org/en/)**.</li>
+  <li>then install **[chocolatey](https://chocolatey.org/install)**.</li>
+  <li>then install **[yarn](https://classic.yarnpkg.com/en/docs/install/)**.</li>
+  <li>then install **[meteor](https://www.meteor.com/developers/install)**.</li>  
+</ol> 
+
+
+Then you can go to your cloned repository from your favorite terminal (I advice you to use chocolatey in Windows but that's up to you ;)) and run this command :
+(be sure to be in the barcraft repo first before using this command) :
+> meteor run
+
+If the installation went well you should access the project from your favorite web browser here :
+> localhost:3000
+
+If the port is not available run this command :
+
+> meteor run --port XXXX 
+
+(with XXXX being the port you want to use)
+
+
+#### Linux :
+
+<ol>
+  <li>First of all, install **[NodeJS so you could use NPM](https://nodejs.org/en/)**.</li>
+  <li>then install **[yarn](https://classic.yarnpkg.com/en/docs/install/)**.</li>
+  <li>then install **[meteor](https://www.meteor.com/developers/install)**.</li>  
+</ol> 
+
+
+Then you can go to your cloned repository from your command line
+(be sure to be in the barcraft repo first before using this command) :
+> meteor run
+
+If the installation went well you should access the project from your favorite web browser here :
+> localhost:3000
+
+If the port is not available run this command :
+
+> meteor run --port XXXX 
+
+(with XXXX being the port you want to use)
