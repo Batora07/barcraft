@@ -17,10 +17,10 @@ Dependencies :
 
 #### Windows :
 <ol>
-  <li>First of all, install ** [NodeJS so you could use NPM](https://nodejs.org/en) ** .</li>
-  <li>then install ** [chocolatey](https://chocolatey.org/install) ** .</li>
-  <li>then install ** [yarn](https://classic.yarnpkg.com/en/docs/install) ** .</li>
-  <li>then install ** [meteor](https://www.meteor.com/developers/install) ** .</li>  
+  <li>First of all, install *[NodeJS](https://nodejs.org/en)* so you could use NPM.</li>
+  <li>then install *[chocolatey](https://chocolatey.org/install)* .</li>
+  <li>then install *[yarn](https://classic.yarnpkg.com/en/docs/install)* .</li>
+  <li>then install *[meteor](https://www.meteor.com/developers/install)* .</li>  
 </ol> 
 
 
