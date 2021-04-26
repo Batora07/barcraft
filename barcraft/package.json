@@ -12,12 +12,14 @@
     "bcrypt": "^5.0.1",
     "meteor-node-stubs": "^1.0.1",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.3"
   },
   "meteor": {
     "mainModule": {
-      "client": "client/main.jsx",
-      "server": "server/main.js"
+      "client": "client/main.tsx",
+      "server": "server/main.tsx"
     },
     "testModule": "tests/main.js"
   }
