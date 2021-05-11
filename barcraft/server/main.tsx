@@ -1,31 +1,20 @@
 import { Meteor } from 'meteor/meteor';
+
 import { LinksCollection } from '/imports/api/links';
+import { createDummyUsers } from '../imports/api/Helpers/helpers';
+import { dummyUsers } from '../imports/api/Helpers/Users';
 
 function insertLink({ title, url }) {
   LinksCollection.insert({title, url, createdAt: new Date()});
 }
 
 Meteor.startup(() => {
-  // If the Links collection is empty, add some data.
-  if (LinksCollection.find().count() === 0) {
-    insertLink({
-      title: 'Do the Tutorial',
-      url: 'https://www.meteor.com/tutorials/react/creating-an-app'
-    });
-
-    insertLink({
-      title: 'Follow the Guide',
-      url: 'http://guide.meteor.com'
-    });
-
-    insertLink({
-      title: 'Read the Docs',
-      url: 'https://docs.meteor.com'
-    });
-
-    insertLink({
-      title: 'Discussions',
-      url: 'https://forums.meteor.com'
-    });
+  const numberOfUsers:number = Meteor.users.find().count();
+  if(numberOfUsers === 0){
+    console.log("Il n'y a pas d'utilisateurs");
+    createDummyUsers(dummyUsers);
+  }  
+  else {
+    console.log("Il y a des utilisateurs");
   }
 });
