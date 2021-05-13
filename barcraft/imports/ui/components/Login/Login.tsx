@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from '../HomePage/HomePage';
 import FormLogin from './FormLogin';
+import Header from '../Common/Header/Header';
 
 import { Meteor } from 'meteor/meteor';
 
@@ -31,9 +32,12 @@ const Login = (props:any):JSX.Element => {
     };
 
     return(
+        <>
+        <Header/>
         <HomePage messageText={messageText}>
             <FormLogin onLogin={handleLogin}/>
         </HomePage>
+        </>
     )
 }
 

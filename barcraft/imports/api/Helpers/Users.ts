@@ -3,6 +3,9 @@ import { Accounts } from 'meteor/accounts-base';
 
 import { User } from "../Models/User"
 
+/**
+ * List of dummy users that will fill mango database in case barcraft users's db is empty
+ */
 export const dummyUsers:User[] = 
 [
     {
@@ -27,6 +30,9 @@ export const dummyUsers:User[] =
     }
 ];
 
+/**
+ * Methods on Users that can be used either server/client side 
+ */
 Meteor.methods({
     'user.login' : function({username, mail, password}){
         let userExist: boolean;

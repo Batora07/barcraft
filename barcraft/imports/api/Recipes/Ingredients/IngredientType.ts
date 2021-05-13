@@ -1,0 +1,21 @@
+export enum IngredientType {
+    Syrup,
+    Alcohol,
+    Garnish,
+    Fruit,
+    Ice,
+    Yeast,
+    Sugar,
+    Honey,
+    Egg,
+    Dairy,
+    ChemicalComponent,
+    Juice,
+    Water,
+    Soda,    
+    Malt,
+    Hop,
+    Cereal,
+    Spice,
+    Other
+}
