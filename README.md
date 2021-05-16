@@ -37,6 +37,10 @@ If the port is not available run this command :
 
 (with XXXX being the port you want to use)
 
+Use 
+> meteor --settings settings.json
+if the settings are needed
+
 
 #### Linux :
 
@@ -59,3 +63,7 @@ If the port is not available run this command :
 > meteor run --port XXXX 
 
 (with XXXX being the port you want to use)
+
+Use 
+> meteor --settings settings.json
+if the settings are needed

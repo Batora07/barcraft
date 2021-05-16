@@ -36,6 +36,10 @@ const StyledFormLogin = styled.div`
             font-size: 1.4rem;
         }
     }
+    .socialLoginRow{
+        align-items: justify;
+        display: row;
+    }
     .loginBtn {
         width: 22.7rem;
         border-radius: 0.7rem;
@@ -50,6 +54,54 @@ const StyledFormLogin = styled.div`
         cursor: pointer;
             &:hover {
                 background: ${({theme}) => theme.buttons.color.darkCyan};
+            }
+    }
+    .loginFBBtn {
+        width: 22.7rem;
+        border-radius: 0.7rem;
+        padding-left: 2.5rem;
+        padding-right: 2.2rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+        background: ${({theme}) => theme.buttons.color.facebookBlue};
+        color: white;
+        margin-top: 0.3rem;
+        outline: none;
+        cursor: pointer;
+            &:hover {
+                background: ${({theme}) => theme.buttons.color.facebookBlueOnHover};
+            }
+    }
+    .loginTwitterBtn {
+        width: 22.7rem;
+        border-radius: 0.7rem;
+        padding-left: 2.5rem;
+        padding-right: 2.2rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+        background: ${({theme}) => theme.buttons.color.twitterBlue};
+        color: white;
+        margin-top: 0.3rem;
+        outline: none;
+        cursor: pointer;
+            &:hover {
+                background: ${({theme}) => theme.buttons.color.twitterBlueOnHover};
+            }
+    }
+    .loginGoogleBtn {
+        width: 22.7rem;
+        border-radius: 0.7rem;
+        padding-left: 2.5rem;
+        padding-right: 2.2rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+        background: ${({theme}) => theme.buttons.color.googleRed};
+        color: white;
+        margin-top: 0.3rem;
+        outline: none;
+        cursor: pointer;
+            &:hover {
+                background: ${({theme}) => theme.buttons.color.googleRedOnHover};
             }
     }
 `;

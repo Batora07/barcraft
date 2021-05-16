@@ -1,0 +1,17 @@
+{ 
+    "facebook": {
+        "appId": "",
+        "secret": "",
+        "oauth_url": "http://localhost:3000/_oauth/facebook"
+    },
+    "twitter": {
+        "consumerKey": "",
+        "secret": "",
+        "oauth_url": ""
+    },
+    "google": {
+        "clientId": "",
+        "secret": "",
+        "oauth_url": ""
+    }    
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import StyledTitleHeader from '../../../elements/Common/StyledTitleHeader';
+import { Constante } from '../../../../api/Helpers/Constante';
 
 const TitleHeader = (props:any):JSX.Element => {
 
@@ -14,7 +15,7 @@ const TitleHeader = (props:any):JSX.Element => {
         >            
             <FontAwesome className="header--TitleIcon" name="titleIcon" size="5x" />   
             <div id="header--TitleName">
-                <h3>BARCRAFT</h3>
+                <h3>{Constante.APP_TITLE}</h3>
             </div>         
         </StyledTitleHeader>
     )

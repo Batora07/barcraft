@@ -57,5 +57,14 @@ Meteor.methods({
                 }
             });
         }
-    }
+    },
+    'user.facebookLogin' : function(){
+
+    },
+    'user.twitterLogin' : function(){
+
+    },
+    'user.googleLogin' : function(){
+
+    },
 });
