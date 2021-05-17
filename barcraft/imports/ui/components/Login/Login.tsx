@@ -103,25 +103,14 @@ const Login = (props:any):JSX.Element => {
 
 
     const TwitterLogin = (state:any):void => {
-        Meteor.call('user.twitterLogin', state, (err: any, res: any) => {
-            const {password, username} = state;
-            if(err) {
-                console.log('error twitter login', err);
+        Meteor.loginWithTwitter((err: any) => {
+            if(err){
+                console.log('err', err);
             }
-            else {
-                // connect user
-                console.log('resultat', res);
-                Meteor.loginWithTwitter(username, password, (err: any, res: any) => {
-                    if(err){
-                        console.log('err', err);
-                    }
-                    else {
-                        console.log('res', res);
-                        props.history.push('/dashboard');
-                    }
-                });
+            else {               
+                props.history.push('/dashboard');
             }
-        }); 
+        });
     };
 
     return(

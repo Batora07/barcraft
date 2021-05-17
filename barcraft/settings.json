@@ -7,7 +7,7 @@
     "twitter": {
         "consumerKey": "",
         "secret": "",
-        "oauth_url": ""
+        "oauth_url": "http://localhost:3000/_oauth/twitter"
     },
     "google": {
         "clientId": "",

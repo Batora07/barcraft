@@ -11,6 +11,19 @@ function insertLink({ title, url }) {
 
 Meteor.startup(() => {
 
+
+  ServiceConfiguration.configurations.remove({
+    service: 'twitter'
+  });
+
+  ServiceConfiguration.configurations.remove({
+    service: 'facebook'
+  });
+
+  ServiceConfiguration.configurations.remove({
+    service: 'google'
+  });
+
 /// SETUP SOCIAL LINKS cf : https://guide.meteor.com/security.html#api-keys-oauth && https://guide.meteor.com/accounts.html#supported-login-services
 // setup facebook
   ServiceConfiguration.configurations.upsert(
