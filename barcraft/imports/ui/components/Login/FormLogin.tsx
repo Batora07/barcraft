@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { AuthenticationType } from '../../../api/Helpers/AuthenticationType';
 import StyledFormLogin from '../../elements/Login/StyledFormLogin';
 
 const FormLogin = (props:any):JSX.Element => {
     const [state, setState] = React.useState<any>({
         username: '',
         mail: '',
-        password: ''
+        password: '',
+        authenticationEnum: AuthenticationType.Password
     });
 
     const { username, mail, password } = state;
@@ -57,10 +59,28 @@ const FormLogin = (props:any):JSX.Element => {
                 />
             </label>
 
-            <button 
-                className="loginBtn"
-                onClick={() => props.onLogin(state)}
-            >CONNEXION</button>
+            <div className="socialLoginRow">
+                <button 
+                    className="loginBtn"
+                    onClick={() => props.onLogin(state, AuthenticationType.Password)}
+                >CONNEXION</button>
+
+                <button 
+                    className="loginFBBtn"
+                    onClick={() => props.onLogin(state, AuthenticationType.Facebook)}
+                >CONNEXION avec Facebook</button>
+
+                <button 
+                    className="loginTwitterBtn"
+                    onClick={() => props.onLogin(state, AuthenticationType.Twitter)}
+                >CONNEXION avec Twitter</button>
+
+                <button 
+                    className="loginGoogleBtn"
+                    onClick={() => props.onLogin(state, AuthenticationType.Google)}
+                >CONNEXION avec Google</button>
+            </div>
+            
         </StyledFormLogin>
     )
 }

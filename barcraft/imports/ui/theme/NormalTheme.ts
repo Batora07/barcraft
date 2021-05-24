@@ -27,7 +27,13 @@ const NormalTheme : any = {
     buttons : {
         color: {
             darkCyan : "DarkCyan",
-            cadetBlue: "CadetBlue"
+            cadetBlue: "CadetBlue",
+            facebookBlue: "rgb(0, 132, 255)",
+            facebookBlueOnHover: "#035FB4",
+            twitterBlue: "rgba(29,161,242,1.00)",
+            twitterBlueOnHover: "#3086BA",
+            googleRed: "#d93025",
+            googleRedOnHover: "#B6372F"
         }
     }
 }
