@@ -79,35 +79,27 @@ const Login = (props:any):JSX.Element => {
         });        
     };
 
-    const GoogleLogin = (state:any):void => {
-        Meteor.call('user.googleLogin', state, (err: any, res: any) => {
-            const {password, username} = state;
-            if(err) {
-                console.log('error google login', err);
+    const GoogleLogin = (state:any):void => {       
+        Meteor.loginWithGoogle((err: any) => {
+            if(err){
+                // error
+                console.log('err', err);
             }
-            else {
-                // connect user
-                console.log('resultat', res);
-                Meteor.loginWithGoogle(username, password, (err: any, res: any) => {
-                    if(err){
-                        console.log('err', err);
-                    }
-                    else {
-                        console.log('res', res);
-                        props.history.push('/dashboard');
-                    }
-                });
+            else {              
+                // login success 
+                props.history.push('/dashboard');
             }
-        }); 
+        });
     };
-
 
     const TwitterLogin = (state:any):void => {
         Meteor.loginWithTwitter((err: any) => {
             if(err){
+                // error
                 console.log('err', err);
             }
-            else {               
+            else {          
+                // login success     
                 props.history.push('/dashboard');
             }
         });
